@@ -1,3 +1,9 @@
 <div class="deck">
-  <h2>Hello, World! </h2>
+  <ol>
+    <%= for card <- @cards do%>
+    <li>
+      <p style="color: <%=tl(tl(card))%>"> <%=hd(card)%> of <%=hd(tl(card))%></p>
+      <% end %>
+    </li>
+  </ol>
 </div>
