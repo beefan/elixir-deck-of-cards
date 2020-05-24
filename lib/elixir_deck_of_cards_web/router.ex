@@ -17,6 +17,7 @@ defmodule ElixirDeckOfCardsWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/go-fish", FishController, :index
   end
 
   # Other scopes may use custom stacks.
